@@ -39,6 +39,7 @@ def parse_args():
     get_favorites_parser.add_argument(
         "--limit",
         default=5,
+        type=int,
         help="Number of favorites to show (default: %(default)s)",
     )
     get_favorites_parser.set_defaults(function=cmd_get_favorites)
